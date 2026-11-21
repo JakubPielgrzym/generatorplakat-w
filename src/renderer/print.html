@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: plakat:; font-src 'self' data:;">
+  <title>Wydruk</title>
+  <link rel="stylesheet" href="fonts.css">
+  <style id="page-style"></style>
+  <style>
+    html, body { margin: 0; padding: 0; background: #fff; overflow: hidden; }
+    .sheet { position: relative; overflow: hidden; background: #fff; }
+    .cell { position: absolute; transform-origin: 0 0; }
+    .crop { position: absolute; background: #000; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="../shared/poster.js"></script>
+  <script src="print.js"></script>
+</body>
+</html>
